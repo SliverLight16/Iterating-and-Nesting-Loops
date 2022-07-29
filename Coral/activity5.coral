@@ -1,0 +1,10 @@
+integer i
+
+i = 10
+
+while i <= 50
+   Put i to output
+   Put " " to output
+   
+   i = i + 5
+   

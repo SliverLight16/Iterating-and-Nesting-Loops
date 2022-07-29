@@ -1,0 +1,35 @@
+Function Main() returns nothing
+   integer usrNumA
+   integer usrNumB
+   integer lcmResult
+   
+   usrNumA = Get next input
+   usrNumB = Get next input
+   lcmResult = FindLCM(usrNumA, usrNumB)
+   
+   Put "Least common multiple of " to output
+   Put usrNumA to output
+   Put " and " to output
+   Put usrNumB to output
+   Put " is " to output
+   Put lcmResult to output
+   
+   
+Function FindLCM(integer aVal, integer bVal) returns integer lcmVal
+   lcmVal = AbsoluteValue(aVal * bVal) / FindGCD(aVal, bVal)
+   
+Function FindGCD(integer aVal, integer bVal) returns integer gcdVal
+   integer numA
+   integer numB
+   
+   numA = aVal
+   numB = bVal
+   
+   while numA != numB
+      if numB > numA
+         numB = numB - numA 
+         
+      else
+         numA = numA - numB
+         
+   gcdVal = numA

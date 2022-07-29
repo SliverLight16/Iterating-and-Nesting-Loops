@@ -1,0 +1,13 @@
+integer userNum
+integer curPower
+
+curPower = 2
+userNum = Get next input
+
+while userNum == 1
+   Put curPower to output
+   Put "\n" to output
+   curPower = curPower*2
+   userNum = Get next input
+
+Put "Done." to output

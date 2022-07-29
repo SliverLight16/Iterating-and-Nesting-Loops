@@ -1,0 +1,13 @@
+Increment - 
+
+Decrement - 
+
+While Loop - is a loop that repeatedly executes the loop body while the loop's expression evaluates to true.
+
+For Loop - is a loop consisting of a loop variable initialization, a loop expression, and a loop variable update that typically describes iterating for a specific number of times. 
+
+Nested Loops - is a loop that appears in the body of another loop.
+
+Inner Loop - a loop within a loop body
+
+Outer Loop - a loop that has a loop within its body

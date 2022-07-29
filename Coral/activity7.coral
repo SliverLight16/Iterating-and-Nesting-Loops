@@ -1,0 +1,22 @@
+Function Main () returns nothing
+   float sellingPrice
+   sellingPrice = Get next input
+   
+   Put "eBay Fee: $" to output
+   Put EbayFee(sellingPrice) to output
+
+
+Function EbayFee(float sellPrice) returns float feeTotal
+   feeTotal = 0.5
+   
+   if sellPrice <= 50.0
+      feeTotal = feeTotal + (sellPrice*0.13)
+      
+   elseif sellPrice <= 1000
+      feeTotal = feeTotal + (50*0.13)
+      feeTotal = feeTotal + ((sellPrice - 50) * 0.05)
+      
+   else
+      feeTotal = feeTotal + (50 * 0.13)
+      feeTotal = feeTotal + ((1000 - 50)*0.05)
+      feeTotal = feeTotal + ((sellPrice - 1000)*0.02)

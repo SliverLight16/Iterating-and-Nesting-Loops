@@ -1,0 +1,21 @@
+float intialSavings
+float interestRate
+float currSavings
+integer i
+
+intialSavings = Get next input 
+interestRate = Get next input
+
+Put "Annual savings for 10 years \n" to output
+
+currSavings = intialSavings
+i = 0
+
+while i < 10
+   Put "$" to output
+   Put currSavings to output
+   Put "\n" to output
+   
+   currSavings = currSavings + (currSavings *interestRate)
+   i = i+1
+   

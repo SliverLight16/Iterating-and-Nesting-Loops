@@ -1,0 +1,24 @@
+integer maxSoFar
+integer currValue
+integer numValues
+integer i
+
+maxSoFar = 0
+numValues = Get next input
+i = 0
+
+while i < numValues
+   currValue = Get next input
+   
+   if i==0
+      maxSoFar = currValue
+      
+   elseif currValue > maxSoFar
+      maxSoFar = currValue
+      
+   i = i+1
+   
+Put "Max: " to output
+Put maxSoFar to output
+      
+      
